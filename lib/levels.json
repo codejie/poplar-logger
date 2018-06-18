@@ -1,0 +1,8 @@
+{
+  "fatal": 9,
+  "error": 8,
+  "warn": 7,
+  "info": 5,
+  "debug": 3,
+  "trace": 2
+}

@@ -1,0 +1,8 @@
+{
+    "string": 1,
+    "object": 2,
+    "error": 3,
+    "array": 4,
+    "number": 5,
+    "holder": 6
+}
