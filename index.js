@@ -12,10 +12,10 @@ const s = process.stdout;
 // const a = { b : 1 };
 // a.o = a;
 
-// console.log('a = %d', a);
+console.log('a = %d, b = %j', a, a);
 // // console.log(JSON.stringify(a));
 // console.log(fastStringify(a));
-const b = ["1",2,{a:3}];
-console.log(b);
-console.log(b);
-console.log(b);
+// const b = ["1",2,{a:3}];
+// console.log(b);
+// console.log(b);
+// console.log(b);

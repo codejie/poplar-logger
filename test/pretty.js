@@ -4,7 +4,7 @@
 
 const Logger = new (require('../lib'))({
     level: 'trace',
-    pretty: false,
+    pretty: true,
     // writeCallback: function () {
     //     console.log('wrote');
     // }
