@@ -10,7 +10,8 @@
     "basic": "node test/basic.js",
     "pretty": "node test/pretty.js",
     "bench-basic": "node benchmark/basic.js",
-    "bench-object": "node benchmark/object.js"
+    "bench-object": "node benchmark/object.js",
+    "bench-array": "node benchmark/array.js"
   },
   "keywords": [
     "poplar",
@@ -22,7 +23,6 @@
   "license": "MIT",
   "dependencies": {
     "fast-safe-stringify": "^2.0.4",
-    "flatstr": "^1.0.8",
     "json-parse-safe": "^1.0.5"
   },
   "devDependencies": {

@@ -28,6 +28,7 @@ Logger.info('This is a string.');
 Logger.info('the below should show an object structure:');
 Logger.trace(a);
 
+Logger.setLevel('info');
 Logger.trace(new Error('this is error.'));
 
 Logger.info('the next should show an array included number, string, object and error:');

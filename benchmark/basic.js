@@ -16,6 +16,7 @@ const run = Bench([
         for (let i = 0; i < 10; ++ i) {
             Log.CacheLogger.info('Hello world');
         }
+        Log.CacheLogger.flush();
         setImmediate(done);
     },
     function pretty (done) {
