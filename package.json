@@ -3,18 +3,29 @@
   "version": "1.0.0",
   "description": "log library",
   "main": "index.js",
+  "bin": {
+    "poplar": "./poplar.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "basic": "node test/basic.js",
+    "pretty": "node test/pretty.js",
+    "bench-basic": "node benchmark/basic.js",
+    "bench-object": "node benchmark/object.js"
   },
   "keywords": [
-    "poplar"
+    "poplar",
+    "logger",
+    "stream",
+    "json"
   ],
-  "author": "Jie.",
-  "license": "ISC",
+  "author": "Jie. <codejie@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "fast-safe-stringify": "^2.0.4",
     "flatstr": "^1.0.8",
-    "json-parse-safe": "^1.0.5",
-    "split2": "^2.2.0"
+    "json-parse-safe": "^1.0.5"
+  },
+  "devDependencies": {
+    "fastbench": "^1.0.1"
   }
 }

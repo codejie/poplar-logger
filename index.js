@@ -1,21 +1,16 @@
 'use strict'
 
-const fastStringify = require('fast-safe-stringify');
-const flatStr = require('flatstr');
+const Poplar = require('./lib');
 
-const s = process.stdout;
+const Logger = new Poplar({});
+const PrettyLogger = new Poplar({
+    pretty: true
+});
+const CacheLogger = new Poplar({
+    cache: 4096
+});
 
-// s.write('123', 'utf-8', () => {
-//     console.log('done');
-// });
-
-// const a = { b : 1 };
-// a.o = a;
-
-console.log('a = %d, b = %j', a, a);
-// // console.log(JSON.stringify(a));
-// console.log(fastStringify(a));
-// const b = ["1",2,{a:3}];
-// console.log(b);
-// console.log(b);
-// console.log(b);
+module.exports = Poplar;
+module.exports.Logger = Logger;
+module.exports.PrettyLogger = PrettyLogger;
+module.exports.CacheLogger = CacheLogger;
