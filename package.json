@@ -20,6 +20,11 @@
     "json"
   ],
   "author": "Jie. <codejie@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codejie/poplar-logger.git"
+  },
+  "homepage": "https://github.com/codejie/poplar-logger",
   "license": "MIT",
   "dependencies": {
     "fast-safe-stringify": "^2.0.4",
