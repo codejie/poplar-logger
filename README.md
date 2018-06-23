@@ -5,7 +5,7 @@ A lightweight logger with the following features, and inpired by [pino](https://
 
 # Install
 ```
-npm install --save poplar
+npm install --save poplar-logger
 ```
 
 # Usage
