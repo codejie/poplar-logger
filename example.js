@@ -13,3 +13,6 @@ Logger.setLevel('trace');
 Logger.trace({Hello: 'world'});
 
 console.log('this is NOT poplar log.');
+
+const child = Logger.child();
+child.trace('child test.');
