@@ -5,6 +5,7 @@
 const Logger = new (require('../lib'))({
     level: 'trace',
     pretty: true,
+    color: 'level'
     // writeCallback: function () {
     //     console.log('wrote');
     // }
@@ -28,7 +29,7 @@ Logger.info('This is a string.');
 Logger.info('the below should show an object structure:');
 Logger.trace(a);
 
-Logger.trace(new Error('this is error.'));
+Logger.error(new Error('this is error.'));
 
 Logger.info('the next should show an array included number, string, object and error:');
 const array = [1, 'a', a, new Error('this is an error')];

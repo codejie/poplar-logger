@@ -67,7 +67,7 @@ Hello world.
 
 # Pretty by Pipe
 ```
->node example.js | poplar.js -l trace
+>node example.js | poplar.js -l trace -c text
 ```
 ```
 [2018-06-23T12:06:00.180+0800] INFO  poplar:
@@ -90,16 +90,18 @@ const defaultOpts = {
     pretty: false,
     cache: 0,
     end: '\n',
+    color: text
 
     output: process.stdout,
     writeCallback: undefined
 };
 ```
-* level: logger level, supports 'trace', 'debug', 'info', 'warn', 'error', 'fatal'
+* level: logger level, supports 'trace', 'debug', 'info', 'warn', 'error' and 'fatal'
 * title: logger title
 * pretty: true indicates pretty formatted-outputing
 * cache: the size of cache buffer, 0 indicates NO cache
 * end: the end of log line
+* color: the color for outputing, supports 'text' and 'level'
 * output: the stream for outputing
 * writeCallback: callback after log outputed
 

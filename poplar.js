@@ -5,6 +5,8 @@
 const Transform = require('stream').Transform;
 const StringDecoder = require('string_decoder').StringDecoder;;
 
+const Chalk = require('chalk');
+
 const Decoder = require('./lib/decoder');
 
 function arg (str) {
@@ -30,13 +32,14 @@ class CopyStream extends Transform {
 
         const opts = {};
         opts.level = argParam('-l');
+        opts.color = argParam('-c');
 
         this.stringDecoder = new StringDecoder('utf8');
-        this.Decoder = new Decoder(opts);
+        this.decoder = new Decoder(opts);
     }
 
     _transform (chunk, encoding, callback) {
-        const ret = this.Decoder.decode(this.stringDecoder.write(chunk));
+        const ret = this.decoder.decode(this.stringDecoder.write(chunk));
         callback(null, ret);
     }
 }
