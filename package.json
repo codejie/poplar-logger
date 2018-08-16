@@ -27,6 +27,7 @@
   "homepage": "https://github.com/codejie/poplar-logger",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "fast-safe-stringify": "^2.0.4",
     "json-parse-safe": "^1.0.5"
   },

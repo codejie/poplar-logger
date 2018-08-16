@@ -90,7 +90,7 @@ const defaultOpts = {
     pretty: false,
     cache: 0,
     end: '\n',
-    color: text
+    color: 'text',
 
     output: process.stdout,
     writeCallback: undefined
