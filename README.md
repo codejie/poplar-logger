@@ -105,6 +105,12 @@ const defaultOpts = {
 * output: the stream for outputing
 * writeCallback: callback after log outputed
 
+# TypeScript
+Ready, please refer to ./test/ts/base.ts
+```js
+import { default as Poplar, Logger, PrettyLogger, CacheLogger } from 'poplar-logger'
+```
+
 # Bechmarks
 
 Basic

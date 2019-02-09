@@ -2,15 +2,12 @@
 
 const Poplar = require('./lib');
 
-const Logger = new Poplar({});
-const PrettyLogger = new Poplar({
-    pretty: true
+module.exports = Poplar;
+module.exports.Logger = new Poplar();
+module.exports.PrettyLogger = new Poplar({
+    pretty: true,
+    color: 'level'
 });
-const CacheLogger = new Poplar({
+module.exports.CacheLogger = new Poplar({
     cache: 4096
 });
-
-module.exports = Poplar;
-module.exports.Logger = Logger;
-module.exports.PrettyLogger = PrettyLogger;
-module.exports.CacheLogger = CacheLogger;
