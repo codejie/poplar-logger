@@ -103,7 +103,7 @@ const defaultOpts = {
 * cache: the size of cache buffer, 0 indicates NO cache
 * end: the end of log line
 * color: the color for outputing, supports 'text' and 'level'
-* noTags: true indicates do NOT show all tags info, includes time,title,level fields
+* noTags: true indicates do NOT show all tags, includes time,title,level fields
 * output: the stream for outputing
 * writeCallback: callback after log outputed
 

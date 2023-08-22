@@ -6,6 +6,7 @@ export interface Options {
     cache?: number,
     end?: string,
     color?: boolean | string,
+    noTags?: boolean,
 
     output?: any,
     writeCallback?: Function,

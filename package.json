@@ -1,6 +1,6 @@
 {
   "name": "poplar-logger",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "lightweight logger, all are objects, with formatted-output script.",
   "main": "index.js",
   "types": "index.d.ts",
