@@ -5,7 +5,8 @@
 const Logger = new (require('../lib'))({
     level: 'trace',
     pretty: true,
-    color: 'level'
+    color: 'level',
+    noTags: false
     // writeCallback: function () {
     //     console.log('wrote');
     // }
